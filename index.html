@@ -179,7 +179,7 @@ var _hmt = _hmt || [];
   
     <div class="article-meta">
       <a href="/2015/12/07/20151207_l1/" class="article-date">
-  	<time datetime="2015-12-07T01:52:24.000Z" itemprop="datePublished">2015-12-07</time>
+  	<time datetime="2015-12-07T01:54:35.000Z" itemprop="datePublished">2015-12-07</time>
 </a>
     </div>
   
@@ -188,9 +188,20 @@ var _hmt = _hmt || [];
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/07/20151207_l1/">android检查图片是否损坏</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="title:android检查图片是否损坏">title:android检查图片是否损坏</h2><p>filePath是文件的绝对路径。</p>
+        <p>filePath是文件的绝对路径。</p>
 <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 检查图片是否损坏</span><br><span class="line"> *</span><br><span class="line"> * @param filePath</span><br><span class="line"> * @return</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> checkImgDamage(String filePath) &#123;</span><br><span class="line">    BitmapFactory.<span class="keyword">Options</span> <span class="keyword">options</span> = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">options</span> == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">options</span> = <span class="keyword">new</span> BitmapFactory.<span class="keyword">Options</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">options</span>.inJustDecodeBounds = <span class="keyword">true</span>;</span><br><span class="line">        </span><br><span class="line">    BitmapFactory.decodeFile(filePath, <span class="keyword">options</span>);</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">options</span>.mCancel || <span class="keyword">options</span>.outWidth == -<span class="number">1</span></span><br><span class="line">                || <span class="keyword">options</span>.outHeight == -<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
