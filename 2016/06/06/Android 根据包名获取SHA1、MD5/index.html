@@ -5,15 +5,19 @@
   
   <title>哲匠个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="android学习之路">
-<meta property="og:type" content="website">
+  <meta name="description" content="title: Android 根据包名获取SHA1和MD5date: 2016-05-18 15:50:06
+Android 根据包名获取SHA1和MD5123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566">
+<meta property="og:type" content="article">
 <meta property="og:title" content="哲匠个人博客">
-<meta property="og:url" content="http://zheblog.com/index.html">
+<meta property="og:url" content="http://zheblog.com/2016/06/06/Android 根据包名获取SHA1、MD5/index.html">
 <meta property="og:site_name" content="哲匠个人博客">
-<meta property="og:description" content="android学习之路">
+<meta property="og:description" content="title: Android 根据包名获取SHA1和MD5date: 2016-05-18 15:50:06
+Android 根据包名获取SHA1和MD5123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566">
+<meta property="og:updated_time" content="2016-06-06T05:08:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="哲匠个人博客">
-<meta name="twitter:description" content="android学习之路">
+<meta name="twitter:description" content="title: Android 根据包名获取SHA1和MD5date: 2016-05-18 15:50:06
+Android 根据包名获取SHA1和MD5123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566">
   
     <link rel="alternative" href="/atom.xml" title="哲匠个人博客" type="application/atom+xml">
   
@@ -173,58 +177,7 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-微博GridView" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/06/微博GridView/" class="article-date">
-  	<time datetime="2016-06-06T05:08:31.000Z" itemprop="datePublished">2016-06-06</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>title: 类似QQ、微信、微博的WeiBoGridView<br>date: 2016-06-06 12:50:00</p>
-<h2 id="Android_类似QQ、微信、微博的WeiBoGridView">Android 类似QQ、微信、微博的WeiBoGridView</h2><h3 id="类似微博、微信展示动态(Feed)图片，不同数量不同布局的GridView。">类似微博、微信展示动态(Feed)图片，不同数量不同布局的GridView。</h3><h3 id="WeiBoGridView是根据显示子View的个数，使其填充满屏幕宽度的View，适用于社交软件Feed的展示。">WeiBoGridView是根据显示子View的个数，使其填充满屏幕宽度的View，适用于社交软件Feed的展示。</h3><p>XML:</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;com<span class="class">.zheblog</span><span class="class">.weibogridview</span><span class="class">.view</span><span class="class">.FeedGridView</span></span><br><span class="line">        android:id=<span class="string">"@+id/gv_photo"</span></span><br><span class="line">        android:layout_width=<span class="string">"wrap_content"</span></span><br><span class="line">        android:layout_height=<span class="string">"wrap_content"</span></span><br><span class="line">        android:layout_marginTop=<span class="string">"@dimen/zhe_dp10"</span></span><br><span class="line">        android:horizontalSpacing=<span class="string">"@dimen/zhe_dp10"</span></span><br><span class="line">        android:listSelector=<span class="string">"@color/zhe_transparent"</span></span><br><span class="line">        android:scrollbars=<span class="string">"none"</span></span><br><span class="line">        android:stretchMode=<span class="string">"none"</span></span><br><span class="line">        android:verticalSpacing=<span class="string">"@dimen/zhe_dp10"</span> /&gt;</span><br></pre></td></tr></table></figure>
-<p>代码：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">gvPhoto</span><span class="class">.setPhotoAdapter</span>(<span class="tag">item</span><span class="class">.getPhotoModels</span>());</span><br></pre></td></tr></table></figure>
-<p>动态效果图：</p>
-<p><img src="http://7xom0g.com1.z0.glb.clouddn.com/WeiBoGridView.gif" alt="zheblog"></p>
-<h3 id="GitHub代码下载"><a href="https://github.com/zhe525069676/WeiBoGridView" target="_blank" rel="external">GitHub代码下载</a></h3><h3 id="最后">最后</h3><p><mark>注</mark>：后期会增加#字话题、链接、@人的识别。</p>
-<p>下载代码请移步<a href="https://github.com/zhe525069676/WeiBoGridView" target="_blank" rel="external">GitHub</a>，如果对您有帮助请Star，有问题随时联系我，谢谢.</p>
-<h3 id="关于我">关于我</h3><p>QQ:525069676</p>
-<p>邮箱:nh_zhe@163.com</p>
-<p><a href="http://www.zheblog.com" target="_blank" rel="external">个人博客</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
- 
-
-  
-    <article id="post-Android 根据包名获取SHA1、MD5" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Android 根据包名获取SHA1、MD5" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/06/06/Android 根据包名获取SHA1、MD5/" class="article-date">
@@ -246,180 +199,67 @@ var _hmt = _hmt || [];
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
   
-</article>
-
-
-
- 
-
-  
-    <article id="post-java-锁的特性" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/18/java-锁的特性/" class="article-date">
-  	<time datetime="2016-04-18T06:30:05.000Z" itemprop="datePublished">2016-04-18</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+<nav id="article-nav">
+  
+    <a href="/2016/06/06/微博GridView/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/18/java-锁的特性/">java 锁的特性</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改前的值或不一致的值，这将引发许多严重问题。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
- 
-
-  
-    <article id="post-检测图片损坏" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/07/检测图片损坏/" class="article-date">
-  	<time datetime="2015-12-07T01:54:35.000Z" itemprop="datePublished">2015-12-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+          (no title)
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/07/检测图片损坏/">android检查图片是否损坏</a>
-    </h1>
   
+    <a href="/2016/04/18/java-锁的特性/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java 锁的特性</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>filePath是文件的绝对路径。</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * 检查图片是否损坏</span><br><span class="line"> *</span><br><span class="line"> * @param filePath</span><br><span class="line"> * @return</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> checkImgDamage(String filePath) &#123;</span><br><span class="line">    BitmapFactory.<span class="keyword">Options</span> <span class="keyword">options</span> = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">options</span> == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">options</span> = <span class="keyword">new</span> BitmapFactory.<span class="keyword">Options</span>();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">options</span>.inJustDecodeBounds = <span class="keyword">true</span>;</span><br><span class="line">        </span><br><span class="line">    BitmapFactory.decodeFile(filePath, <span class="keyword">options</span>);</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">options</span>.mCancel || <span class="keyword">options</span>.outWidth == -<span class="number">1</span></span><br><span class="line">                || <span class="keyword">options</span>.outHeight == -<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
 
-
- 
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/01/hello-world/" class="article-date">
-  	<time datetime="2015-12-01T09:12:48.000Z" itemprop="datePublished">2015-12-01</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
  
-
-  
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-Android 根据包名获取SHA1、MD5" data-title="" data-url="http://zheblog.com/2016/06/06/Android 根据包名获取SHA1、MD5/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'zhejiang'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
   
 </div>
       <footer id="footer">
@@ -444,8 +284,8 @@ var _hmt = _hmt || [];
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
