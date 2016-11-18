@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            首頁
           </a>
         </li>
       
@@ -195,7 +195,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            歸檔
           </a>
         </li>
       
@@ -205,7 +205,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            標籤
           </a>
         </li>
       
@@ -261,7 +261,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2016-07-12T09:30:05+08:00" content="2016-07-12">
               2016-07-12
             </time>
@@ -365,7 +365,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2016-06-17T17:30:06+08:00" content="2016-06-17">
               2016-06-17
             </time>
@@ -405,7 +405,7 @@
           
             <p>背景图片跟随手势滑动的ViewPager，可各方向滑动或点击切换页面。</p>
 <p>效果参考 <a href="https://play.google.com/store/apps/details?id=com.innovagency.ana" target="_blank" rel="external">ANA Portuguese Airports</a>（google play地址）</p>
-<h4 id="效果图">效果图</h4><p><img src="/gif/BgMoveViewPager.gif" style="width: 30%;"></p>
+<h4 id="效果图">效果图</h4><p><img src="/gif/BgMoveViewPager.gif" style="width: 50%;"></p>
 <h4 id="GitHub代码下载"><a href="https://github.com/zhe525069676/BgMoveViewPager" target="_blank" rel="external">GitHub代码下载</a></h4><h4 id="组成">组成</h4><p>项目由一个Activity和五个fragment组成。</p>
 <h4 id="主要代码介绍">主要代码介绍</h4><p>1、横向背景移动的ViewPager中，重写dispatchDraw方法:</p>
 <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line"><span class="keyword">protected</span> <span class="keyword">void</span> dispatchDraw(Canvas canvas) &#123;</span><br><span class="line">   <span class="keyword">if</span> (<span class="keyword">this</span>.bg != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="built_in">int</span> <span class="variable">width</span> = <span class="keyword">this</span>.bg.getWidth();</span><br><span class="line">        <span class="built_in">int</span> <span class="variable">height</span> = <span class="keyword">this</span>.bg.getHeight();</span><br><span class="line">        <span class="built_in">int</span> count = getAdapter().getCount();</span><br><span class="line">        <span class="built_in">int</span> x = getScrollX();</span><br><span class="line">        <span class="comment">//子View中背景图片需要显示的宽度，放大背景图或缩小背景图。</span></span><br><span class="line">        <span class="built_in">int</span> n = <span class="variable">height</span> * getWidth() / getHeight();</span><br><span class="line">        <span class="comment">//(width - n) / (count - 1)表示除去显示第一个ViewPager页面用去的背景宽度，剩余的ViewPager需要显示的背景图片的宽度。</span></span><br><span class="line">        <span class="comment">//getWidth()等于ViewPager一个页面的宽度，即手机屏幕宽度。在该计算中可以理解为滑动一个ViewPager页面需要滑动的像素值。</span></span><br><span class="line">        <span class="comment">//((width - n) / (count - 1)) / getWidth()也就表示ViewPager滑动一个像素时，背景图片滑动的宽度。</span></span><br><span class="line">        <span class="comment">//x * ((width - n) / (count - 1)) / getWidth()也就表示ViewPager滑动x个像素时，背景图片滑动的宽度。</span></span><br><span class="line">        <span class="comment">//背景图片滑动的宽度的宽度可以理解为背景图片滑动到达的位置。</span></span><br><span class="line">         <span class="built_in">int</span> w = (x+getWidth()) * ((<span class="variable">width</span> - n) / (count - <span class="number">1</span>)) / getWidth();</span><br><span class="line">         canvas.drawBitmap(<span class="keyword">this</span>.bg, <span class="keyword">new</span> Rect(w, <span class="number">0</span>, n + w, <span class="variable">height</span>), <span class="keyword">new</span> Rect(x, <span class="number">0</span>, x + getWidth(), getHeight()), <span class="keyword">this</span>.b);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">super</span>.dispatchDraw(canvas);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -480,7 +480,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2016-06-06T12:50:00+08:00" content="2016-06-06">
               2016-06-06
             </time>
@@ -597,7 +597,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2016-05-18T15:50:06+08:00" content="2016-05-18">
               2016-05-18
             </time>
@@ -699,7 +699,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">發表於</span>
             <time itemprop="dateCreated" datetime="2016-04-18T14:30:05+08:00" content="2016-04-18">
               2016-04-18
             </time>
@@ -812,7 +812,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/">
               <span class="site-state-item-count">7</span>
-              <span class="site-state-item-name">日志</span>
+              <span class="site-state-item-name">文章</span>
             </a>
           </div>
 
@@ -879,11 +879,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
 </div>
 
 <div class="theme-info">
-  主题 -
+  主題 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
