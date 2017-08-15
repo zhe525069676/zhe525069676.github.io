@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566//这个是获取SHA1的方法   public static String getCertificateSHA1Fingerprint(Context c">
+<meta name="description" content="锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android 根据包名获取SHA1和MD5">
-<meta property="og:url" content="http://zheblog.com/2016/05/18/Android 根据包名获取SHA1、MD5/index.html">
+<meta property="og:title" content="java 锁的特性">
+<meta property="og:url" content="http://zheblog.com/2016/04/18/java-lock/index.html">
 <meta property="og:site_name" content="哲匠个人博客">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566//这个是获取SHA1的方法   public static String getCertificateSHA1Fingerprint(Context c">
-<meta property="og:updated_time" content="2017-07-17T01:31:32.000Z">
+<meta property="og:description" content="锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改">
+<meta property="og:updated_time" content="2017-07-17T01:31:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android 根据包名获取SHA1和MD5">
-<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566//这个是获取SHA1的方法   public static String getCertificateSHA1Fingerprint(Context c">
+<meta name="twitter:title" content="java 锁的特性">
+<meta name="twitter:description" content="锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改">
 
 
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://zheblog.com/2016/05/18/Android 根据包名获取SHA1、MD5/"/>
+  <link rel="canonical" href="http://zheblog.com/2016/04/18/java-lock/"/>
 
 
 
 
 
-  <title> Android 根据包名获取SHA1和MD5 | 哲匠个人博客 </title>
+  <title> java 锁的特性 | 哲匠个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -259,7 +259,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zheblog.com/2016/05/18/Android 根据包名获取SHA1、MD5/">
+    <link itemprop="mainEntityOfPage" href="http://zheblog.com/2016/04/18/java-lock/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="哲匠">
@@ -280,7 +280,7 @@
             
             
               
-                Android 根据包名获取SHA1和MD5
+                java 锁的特性
               
             
           </h1>
@@ -295,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-18T15:50:06+08:00">
-                2016-05-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-18T14:30:05+08:00">
+                2016-04-18
               </time>
             
 
@@ -314,8 +314,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/05/18/Android 根据包名获取SHA1、MD5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/Android 根据包名获取SHA1、MD5/" itemprop="commentCount"></span>
+                <a href="/2016/04/18/java-lock/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/18/java-lock/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -341,8 +341,7 @@
       
 
       
-        <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这个是获取SHA1的方法</span></span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> getCertificateSHA1Fingerprint(Context context,<span class="keyword">String</span> packageName) &#123;</span><br><span class="line">       <span class="comment">//获取包管理器</span></span><br><span class="line">       PackageManager pm = context.getPackageManager();</span><br><span class="line">       <span class="comment">//获取当前要获取SHA1值的包名，也可以用其他的包名，但需要注意，</span></span><br><span class="line">       <span class="comment">//在用其他包名的前提是，此方法传递的参数Context应该是对应包的上下文。</span></span><br><span class="line">       <span class="comment">//返回包括在包中的签名信息</span></span><br><span class="line">       <span class="built_in">int</span> flags = PackageManager.GET_SIGNATURES;</span><br><span class="line">       PackageInfo packageInfo = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           <span class="comment">//获得包的所有内容信息类</span></span><br><span class="line">           packageInfo = pm.getPackageInfo(packageName, flags);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (PackageManager.NameNotFoundException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//签名信息</span></span><br><span class="line">       Signature[] signatures = packageInfo.signatures;</span><br><span class="line">       <span class="built_in">byte</span>[] cert = signatures[<span class="number">0</span>].toByteArray();</span><br><span class="line">       <span class="comment">//将签名转换为字节数组流</span></span><br><span class="line">       InputStream input = <span class="keyword">new</span> ByteArrayInputStream(cert);</span><br><span class="line">       <span class="comment">//证书工厂类，这个类实现了出厂合格证算法的功能</span></span><br><span class="line">       CertificateFactory cf = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           cf = CertificateFactory.getInstance(<span class="string">"X509"</span>);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (CertificateException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//X509证书，X.509是一种非常通用的证书格式</span></span><br><span class="line">       X509Certificate c = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           c = (X509Certificate) cf.generateCertificate(input);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (CertificateException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">String</span> hexString = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           <span class="comment">//加密算法的类，这里的参数可以使MD4,MD5等加密算法</span></span><br><span class="line">           MessageDigest md = MessageDigest.getInstance(<span class="string">"SHA1"</span>);</span><br><span class="line">           <span class="comment">//获得公钥</span></span><br><span class="line">           <span class="built_in">byte</span>[] publicKey = md.digest(c.getEncoded());</span><br><span class="line">           <span class="comment">//字节到十六进制的格式转换</span></span><br><span class="line">           hexString = byte2HexFormatted(publicKey);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (NoSuchAlgorithmException e1) &#123;</span><br><span class="line">           e1.printStackTrace();</span><br><span class="line">       &#125; <span class="keyword">catch</span> (CertificateEncodingException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> hexString;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//这里是将获取到得编码进行16进制转换</span></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> byte2HexFormatted(<span class="built_in">byte</span>[] arr) &#123;</span><br><span class="line">       StringBuilder <span class="built_in">str</span> = <span class="keyword">new</span> StringBuilder(arr.length * <span class="number">2</span>);</span><br><span class="line">       <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">           <span class="keyword">String</span> h = Integer.toHexString(arr[i]);</span><br><span class="line">           <span class="built_in">int</span> l = h.length();</span><br><span class="line">           <span class="keyword">if</span> (l == <span class="number">1</span>)</span><br><span class="line">               h = <span class="string">"0"</span> + h;</span><br><span class="line">           <span class="keyword">if</span> (l &gt; <span class="number">2</span>)</span><br><span class="line">               h = h.substring(l - <span class="number">2</span>, l);</span><br><span class="line">           <span class="built_in">str</span>.<span class="built_in">append</span>(h.toUpperCase());</span><br><span class="line">           <span class="keyword">if</span> (i &lt; (arr.length - <span class="number">1</span>))</span><br><span class="line">               <span class="built_in">str</span>.<span class="built_in">append</span>(<span class="string">':'</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> <span class="built_in">str</span>.toString();</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>如果想获取MD5，请把上面代码中的“SHA1”换成MD5。</p>
+        <p>锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改前的值或不一致的值，这将引发许多严重问题。</p>
 
       
     </div>
@@ -379,8 +378,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/18/java-锁的特性/" rel="next" title="java 锁的特性">
-                <i class="fa fa-chevron-left"></i> java 锁的特性
+              <a href="/2015/12/07/Detect-picture-damage/" rel="next" title="android检查图片是否损坏">
+                <i class="fa fa-chevron-left"></i> android检查图片是否损坏
               </a>
             
           </div>
@@ -389,8 +388,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/06/06/微博WeiBoLayout/" rel="prev" title="类似QQ、微信、微博的WeiBoLayout">
-                类似QQ、微信、微博的WeiBoLayout <i class="fa fa-chevron-right"></i>
+              <a href="/2016/05/18/AndroidGetSHA1andMD5byPackage/" rel="prev" title="Android 根据包名获取SHA1和MD5">
+                Android 根据包名获取SHA1和MD5 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -417,8 +416,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/18/Android 根据包名获取SHA1、MD5/"
-           data-title="Android 根据包名获取SHA1和MD5" data-url="http://zheblog.com/2016/05/18/Android 根据包名获取SHA1、MD5/">
+      <div class="ds-thread" data-thread-key="2016/04/18/java-lock/"
+           data-title="java 锁的特性" data-url="http://zheblog.com/2016/04/18/java-lock/">
       </div>
     
   </div>
@@ -598,8 +597,6 @@
   
 
 
-  
-
 
 
 
@@ -621,9 +618,6 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   

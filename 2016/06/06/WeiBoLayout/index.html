@@ -87,16 +87,20 @@
 
 
 
-<meta name="description" content="锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改">
+<meta name="description" content="仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。FeedGridView XML:
+1234567891011&amp;lt;com">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java 锁的特性">
-<meta property="og:url" content="http://zheblog.com/2016/04/18/java-锁的特性/index.html">
+<meta property="og:title" content="类似QQ、微信、微博的WeiBoLayout">
+<meta property="og:url" content="http://zheblog.com/2016/06/06/WeiBoLayout/index.html">
 <meta property="og:site_name" content="哲匠个人博客">
-<meta property="og:description" content="锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改">
-<meta property="og:updated_time" content="2017-07-17T01:31:44.000Z">
+<meta property="og:description" content="仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。FeedGridView XML:
+1234567891011&amp;lt;com">
+<meta property="og:image" content="http://zheblog.com/assets/gifs/WeiBoLayout.gif">
+<meta property="og:updated_time" content="2017-07-17T01:31:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java 锁的特性">
-<meta name="twitter:description" content="锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改">
+<meta name="twitter:title" content="类似QQ、微信、微博的WeiBoLayout">
+<meta name="twitter:description" content="仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。FeedGridView XML:
+1234567891011&amp;lt;com">
 
 
 
@@ -124,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://zheblog.com/2016/04/18/java-锁的特性/"/>
+  <link rel="canonical" href="http://zheblog.com/2016/06/06/WeiBoLayout/"/>
 
 
 
 
 
-  <title> java 锁的特性 | 哲匠个人博客 </title>
+  <title> 类似QQ、微信、微博的WeiBoLayout | 哲匠个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -259,7 +263,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zheblog.com/2016/04/18/java-锁的特性/">
+    <link itemprop="mainEntityOfPage" href="http://zheblog.com/2016/06/06/WeiBoLayout/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="哲匠">
@@ -280,7 +284,7 @@
             
             
               
-                java 锁的特性
+                类似QQ、微信、微博的WeiBoLayout
               
             
           </h1>
@@ -295,8 +299,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-18T14:30:05+08:00">
-                2016-04-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-06T12:50:00+08:00">
+                2016-06-06
               </time>
             
 
@@ -314,8 +318,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/04/18/java-锁的特性/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/18/java-锁的特性/" itemprop="commentCount"></span>
+                <a href="/2016/06/06/WeiBoLayout/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/06/WeiBoLayout/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -341,7 +345,21 @@
       
 
       
-        <p>锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改前的值或不一致的值，这将引发许多严重问题。</p>
+        <h4 id="仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。">仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。</h4><h4 id="WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。">WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。</h4><p>FeedGridView XML:</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;com.zheblog.weibogridview.view.FeedGridView</span><br><span class="line">        android:id=<span class="string">"<span class="variable">@+</span>id/gv_photo"</span></span><br><span class="line">        android:layout_width=<span class="string">"wrap_content"</span></span><br><span class="line">        android:layout_height=<span class="string">"wrap_content"</span></span><br><span class="line">        android:layout_marginTop=<span class="string">"<span class="variable">@dimen</span>/zhe_dp10"</span></span><br><span class="line">        android:listSelector=<span class="string">"<span class="variable">@color</span>/zhe_transparent"</span></span><br><span class="line">        android:scrollbars=<span class="string">"none"</span></span><br><span class="line">        android:stretchMode=<span class="string">"none"</span></span><br><span class="line">        app:hSpacing=<span class="string">"<span class="variable">@dimen</span>/zhe_dp10"</span></span><br><span class="line">        app:pSpacing=<span class="string">"<span class="variable">@dimen</span>/zhe_dp10"</span></span><br><span class="line">        app:vSpacing=<span class="string">"<span class="variable">@dimen</span>/zhe_dp10"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hSpacing是水平间距</span><br><span class="line">vSpacing是垂直间距</span><br><span class="line">pSpacing是GridView两边距父控件的间距，便于动态计算每个<span class="property">item</span>的宽度</span><br></pre></td></tr></table></figure>
+<p>FeedGridView 使用代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">gvPhoto</span><span class="class">.setPhotoAdapter</span>(<span class="tag">item</span><span class="class">.getPhotoModels</span>());</span><br></pre></td></tr></table></figure>
+<p>识别文本中的超链接、#字话题、@人的文本</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">tvContent</span><span class="class">.setText</span>(<span class="tag">TimeLineUtility</span><span class="class">.convertNormalStringToSpannableString</span>(<span class="tag">item</span><span class="class">.getContent</span>(), <span class="tag">TimeLineUtility</span><span class="class">.TimeLineStatus</span><span class="class">.FEED</span>));</span><br><span class="line"><span class="tag">tvContent</span><span class="class">.setOnTouchListener</span>(<span class="tag">new</span> <span class="tag">ClickableTextViewMentionLinkOnTouchListener</span>());</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//LINK单一识别超链接</span></span><br><span class="line"><span class="comment">//FEED识别超链接、#字话题、@人</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">TimeLineStatus</span> &#123;</span></span><br><span class="line">        LINK, FEED</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>动态效果图：</p>
+<p><img src="/assets/gifs/WeiBoLayout.gif" style="width: 50%;"></p>
+<h4 id="GitHub代码下载"><a href="https://github.com/zhe525069676/WeiBoLayout" target="_blank" rel="external">GitHub代码下载</a></h4><h4 id="最后">最后</h4><p>下载代码请移步<a href="https://github.com/zhe525069676/WeiBoLayout" target="_blank" rel="external">GitHub</a>，如果对您有帮助请Star，有问题随时联系我，谢谢.</p>
+<h4 id="关于我">关于我</h4><p>QQ交流群:496946393 </p>
+<p>邮箱: nh_zhe@163.com</p>
+<p><a href="http://www.jianshu.com/users/550d52af9d72/latest_articles" target="_blank" rel="external">简书</a></p>
+<p><a href="http://www.zheblog.com" target="_blank" rel="external">个人博客</a></p>
 
       
     </div>
@@ -378,8 +396,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/07/检测图片损坏/" rel="next" title="android检查图片是否损坏">
-                <i class="fa fa-chevron-left"></i> android检查图片是否损坏
+              <a href="/2016/05/18/AndroidGetSHA1andMD5byPackage/" rel="next" title="Android 根据包名获取SHA1和MD5">
+                <i class="fa fa-chevron-left"></i> Android 根据包名获取SHA1和MD5
               </a>
             
           </div>
@@ -388,8 +406,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/05/18/Android 根据包名获取SHA1、MD5/" rel="prev" title="Android 根据包名获取SHA1和MD5">
-                Android 根据包名获取SHA1和MD5 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/06/17/BgMoveViewPager/" rel="prev" title="背景图片跟随手势滑动的ViewPager">
+                背景图片跟随手势滑动的ViewPager <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -416,8 +434,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/18/java-锁的特性/"
-           data-title="java 锁的特性" data-url="http://zheblog.com/2016/04/18/java-锁的特性/">
+      <div class="ds-thread" data-thread-key="2016/06/06/WeiBoLayout/"
+           data-title="类似QQ、微信、微博的WeiBoLayout" data-url="http://zheblog.com/2016/06/06/WeiBoLayout/">
       </div>
     
   </div>
@@ -441,8 +459,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/assets/images/icon_head.jpg"
@@ -506,6 +533,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。"><span class="nav-number">1.</span> <span class="nav-text">仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。"><span class="nav-number">2.</span> <span class="nav-text">WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GitHub代码下载"><span class="nav-number">3.</span> <span class="nav-text">GitHub代码下载</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最后"><span class="nav-number">4.</span> <span class="nav-text">最后</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关于我"><span class="nav-number">5.</span> <span class="nav-text">关于我</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -597,8 +640,6 @@
   
 
 
-  
-
 
 
 
@@ -620,9 +661,6 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
