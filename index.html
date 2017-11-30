@@ -260,6 +260,157 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://zheblog.com/2017/11/30/EditText多行支持修改右下角按钮/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="哲匠">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/icon_head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="哲匠个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/11/30/EditText多行支持修改右下角按钮/" itemprop="url">
+                  Android EditText多行显示并支持修改软键盘右下角按钮
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-30T14:30:05+08:00">
+                2017-11-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/30/EditText多行支持修改右下角按钮/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/11/30/EditText多行支持修改右下角按钮/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="单行EditText">单行EditText</h3><p>项目中很容易遇到EditText修改软键盘右下角按钮的需求，这样设置EditText即可：</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">android:</span>imeOptions=<span class="string">"actionSend"</span>        </span><br><span class="line"><span class="label">android:</span>singleLine=<span class="string">"true"</span></span><br></pre></td></tr></table></figure>
+<p>把EditText的Ime Options属性设置成不同的值，Enter键上可以显示不同的文字或图案</p>
+<blockquote>
+<ul>
+<li>actionNone : 回车键，按下后光标到下一行</li>
+<li>actionGo ： Go，</li>
+<li>actionSearch ： 一个放大镜</li>
+<li>actionSend ： Send</li>
+<li>actionNext ： Next</li>
+<li>actionDone ： Done，隐藏软键盘，即使不是最后一个文本输入框</li>
+</ul>
+</blockquote>
+<h3 id="多行EditText">多行EditText</h3><p>xml文件中设置</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">android:</span>imeOptions=<span class="string">"actionSend"</span></span><br></pre></td></tr></table></figure>
+<p>代码中对EditText设置</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">et</span><span class="class">.setHorizontallyScrolling</span>(<span class="tag">false</span>);</span><br><span class="line"><span class="tag">et</span><span class="class">.setMaxLines</span>(<span class="tag">maxlines</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="关于我">关于我</h3><p>QQ交流群:496946393 </p>
+<p>邮箱: nh_zhe@163.com</p>
+<p><a href="http://www.jianshu.com/users/550d52af9d72/latest_articles" target="_blank" rel="external">简书</a></p>
+<p><a href="https://github.com/zhe525069676" target="_blank" rel="external">GitHub</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://zheblog.com/2017/08/14/Mac-Charles/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -836,138 +987,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://zheblog.com/2016/05/18/AndroidGetSHA1andMD5byPackage/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="哲匠">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/assets/images/icon_head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="哲匠个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/18/AndroidGetSHA1andMD5byPackage/" itemprop="url">
-                  Android 根据包名获取SHA1和MD5
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-18T15:50:06+08:00">
-                2016-05-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/05/18/AndroidGetSHA1andMD5byPackage/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/18/AndroidGetSHA1andMD5byPackage/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这个是获取SHA1的方法</span></span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> getCertificateSHA1Fingerprint(Context context,<span class="keyword">String</span> packageName) &#123;</span><br><span class="line">       <span class="comment">//获取包管理器</span></span><br><span class="line">       PackageManager pm = context.getPackageManager();</span><br><span class="line">       <span class="comment">//获取当前要获取SHA1值的包名，也可以用其他的包名，但需要注意，</span></span><br><span class="line">       <span class="comment">//在用其他包名的前提是，此方法传递的参数Context应该是对应包的上下文。</span></span><br><span class="line">       <span class="comment">//返回包括在包中的签名信息</span></span><br><span class="line">       <span class="built_in">int</span> flags = PackageManager.GET_SIGNATURES;</span><br><span class="line">       PackageInfo packageInfo = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           <span class="comment">//获得包的所有内容信息类</span></span><br><span class="line">           packageInfo = pm.getPackageInfo(packageName, flags);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (PackageManager.NameNotFoundException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//签名信息</span></span><br><span class="line">       Signature[] signatures = packageInfo.signatures;</span><br><span class="line">       <span class="built_in">byte</span>[] cert = signatures[<span class="number">0</span>].toByteArray();</span><br><span class="line">       <span class="comment">//将签名转换为字节数组流</span></span><br><span class="line">       InputStream input = <span class="keyword">new</span> ByteArrayInputStream(cert);</span><br><span class="line">       <span class="comment">//证书工厂类，这个类实现了出厂合格证算法的功能</span></span><br><span class="line">       CertificateFactory cf = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           cf = CertificateFactory.getInstance(<span class="string">"X509"</span>);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (CertificateException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//X509证书，X.509是一种非常通用的证书格式</span></span><br><span class="line">       X509Certificate c = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           c = (X509Certificate) cf.generateCertificate(input);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (CertificateException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">String</span> hexString = <span class="keyword">null</span>;</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           <span class="comment">//加密算法的类，这里的参数可以使MD4,MD5等加密算法</span></span><br><span class="line">           MessageDigest md = MessageDigest.getInstance(<span class="string">"SHA1"</span>);</span><br><span class="line">           <span class="comment">//获得公钥</span></span><br><span class="line">           <span class="built_in">byte</span>[] publicKey = md.digest(c.getEncoded());</span><br><span class="line">           <span class="comment">//字节到十六进制的格式转换</span></span><br><span class="line">           hexString = byte2HexFormatted(publicKey);</span><br><span class="line">       &#125; <span class="keyword">catch</span> (NoSuchAlgorithmException e1) &#123;</span><br><span class="line">           e1.printStackTrace();</span><br><span class="line">       &#125; <span class="keyword">catch</span> (CertificateEncodingException e) &#123;</span><br><span class="line">           e.printStackTrace();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> hexString;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//这里是将获取到得编码进行16进制转换</span></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">String</span> byte2HexFormatted(<span class="built_in">byte</span>[] arr) &#123;</span><br><span class="line">       StringBuilder <span class="built_in">str</span> = <span class="keyword">new</span> StringBuilder(arr.length * <span class="number">2</span>);</span><br><span class="line">       <span class="keyword">for</span> (<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">           <span class="keyword">String</span> h = Integer.toHexString(arr[i]);</span><br><span class="line">           <span class="built_in">int</span> l = h.length();</span><br><span class="line">           <span class="keyword">if</span> (l == <span class="number">1</span>)</span><br><span class="line">               h = <span class="string">"0"</span> + h;</span><br><span class="line">           <span class="keyword">if</span> (l &gt; <span class="number">2</span>)</span><br><span class="line">               h = h.substring(l - <span class="number">2</span>, l);</span><br><span class="line">           <span class="built_in">str</span>.<span class="built_in">append</span>(h.toUpperCase());</span><br><span class="line">           <span class="keyword">if</span> (i &lt; (arr.length - <span class="number">1</span>))</span><br><span class="line">               <span class="built_in">str</span>.<span class="built_in">append</span>(<span class="string">':'</span>);</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> <span class="built_in">str</span>.toString();</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>如果想获取MD5，请把上面代码中的“SHA1”换成MD5。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1017,7 +1036,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
