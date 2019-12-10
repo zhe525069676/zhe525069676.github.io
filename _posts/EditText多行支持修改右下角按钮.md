@@ -1,0 +1,43 @@
+title: Android EditText多行显示并支持修改软键盘右下角按钮
+date: 2017-11-30 14:30:05
+## EditText多行支持修改右下角按钮
+----
+### 单行EditText
+项目中很容易遇到EditText修改软键盘右下角按钮的需求，这样设置EditText即可：
+
+```
+android:inputType="text"
+android:imeOptions="actionSend"        
+android:singleLine="true"
+```
+把EditText的imeOptions属性设置成不同的值，Enter键上可以显示不同的文字或图案
+> * actionNone : 回车键，按下后光标到下一行
+> * actionGo ： Go
+> * actionSearch ： 一个放大镜
+> * actionSend ： Send
+> * actionNext ： Next
+> * actionDone ： Done，隐藏软键盘，即使不是最后一个文本输入框
+
+### 多行EditText
+xml文件中设置
+
+```
+android:inputType="text"
+android:imeOptions="actionSend" 
+```
+代码中对EditText设置
+
+```
+et.setHorizontallyScrolling(false);
+et.setMaxLines(maxlines);
+```
+
+### 关于我
+QQ交流群:496946393 
+
+邮箱: nh_zhe@163.com
+
+[简书](http://www.jianshu.com/users/550d52af9d72/latest_articles)
+
+[GitHub](https://github.com/zhe525069676)
+
