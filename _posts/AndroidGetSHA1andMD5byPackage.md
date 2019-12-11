@@ -2,12 +2,12 @@
 layout:     post
 title:      "Android 根据包名获取SHA1和MD5"
 subtitle:   "Android 根据包名获取SHA1和MD5"
-date:       2016-05-18 15:50:06
-author:     "Hux"
+author:     "哲匠"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - Android
 ---
+
 ## Android 根据包名获取SHA1和MD5 ##
 ----
 ```
