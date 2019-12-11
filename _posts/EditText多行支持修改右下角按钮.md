@@ -1,5 +1,14 @@
-title: Android EditText多行显示并支持修改软键盘右下角按钮
-date: 2017-11-30 14:30:05
+---
+layout:     post
+title:      "Android EditText多行显示并支持修改软键盘右下角按钮"
+subtitle:   "Android EditText多行显示并支持修改软键盘右下角按钮"
+date:       2017-11-30 14:30:05
+author:     "哲匠"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Android
+---
+
 ## EditText多行支持修改右下角按钮
 ----
 ### 单行EditText

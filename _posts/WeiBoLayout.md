@@ -1,5 +1,13 @@
-title: 类似QQ、微信、微博的WeiBoLayout
-date: 2016-06-06 12:50:00
+---
+layout:     post
+title:      "类似QQ、微信、微博的WeiBoLayout"
+subtitle:   "类似QQ、微信、微博的WeiBoLayout"
+date:       2016-06-06 12:50:00
+author:     "哲匠"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - Android
+---
 
 ## Android 类似QQ、微信、微博的WeiBoLayout ##
 ----
