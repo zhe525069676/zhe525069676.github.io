@@ -5,9 +5,656 @@
     <description>在最虚荣的年纪却一无所有</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 11 Dec 2019 13:33:10 +0800</pubDate>
-    <lastBuildDate>Wed, 11 Dec 2019 13:33:10 +0800</lastBuildDate>
+    <pubDate>Wed, 11 Dec 2019 14:33:28 +0800</pubDate>
+    <lastBuildDate>Wed, 11 Dec 2019 14:33:28 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Android EditText多行显示并支持修改软键盘右下角按钮</title>
+        <description>&lt;h2 id=&quot;edittext多行支持修改右下角按钮&quot;&gt;EditText多行支持修改右下角按钮&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;单行edittext&quot;&gt;单行EditText&lt;/h3&gt;
+&lt;p&gt;项目中很容易遇到EditText修改软键盘右下角按钮的需求，这样设置EditText即可：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;android:inputType=&quot;text&quot;
+android:imeOptions=&quot;actionSend&quot;        
+android:singleLine=&quot;true&quot;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;把EditText的imeOptions属性设置成不同的值，Enter键上可以显示不同的文字或图案&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;actionNone : 回车键，按下后光标到下一行&lt;/li&gt;
+    &lt;li&gt;actionGo ： Go&lt;/li&gt;
+    &lt;li&gt;actionSearch ： 一个放大镜&lt;/li&gt;
+    &lt;li&gt;actionSend ： Send&lt;/li&gt;
+    &lt;li&gt;actionNext ： Next&lt;/li&gt;
+    &lt;li&gt;actionDone ： Done，隐藏软键盘，即使不是最后一个文本输入框&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;多行edittext&quot;&gt;多行EditText&lt;/h3&gt;
+&lt;p&gt;xml文件中设置&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;android:inputType=&quot;text&quot;
+android:imeOptions=&quot;actionSend&quot; 
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;代码中对EditText设置&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;et.setHorizontallyScrolling(false);
+et.setMaxLines(maxlines);
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;关于我&quot;&gt;关于我&lt;/h3&gt;
+&lt;p&gt;QQ交流群:496946393&lt;/p&gt;
+
+&lt;p&gt;邮箱: nh_zhe@163.com&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/users/550d52af9d72/latest_articles&quot;&gt;简书&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/zhe525069676&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 30 Nov 2017 22:30:05 +0800</pubDate>
+        <link>http://localhost:4000/2017/11/30/EditText%E5%A4%9A%E8%A1%8C%E6%94%AF%E6%8C%81%E4%BF%AE%E6%94%B9%E5%8F%B3%E4%B8%8B%E8%A7%92%E6%8C%89%E9%92%AE/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/30/EditText%E5%A4%9A%E8%A1%8C%E6%94%AF%E6%8C%81%E4%BF%AE%E6%94%B9%E5%8F%B3%E4%B8%8B%E8%A7%92%E6%8C%89%E9%92%AE/</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mac下使用抓包工具--Charles进行抓包</title>
+        <description>&lt;h1 id=&quot;mac下使用抓包工具charles进行抓包&quot;&gt;Mac下使用抓包工具–Charles进行抓包&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_logo.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.charlesproxy.com/&quot;&gt;官网地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;破解教程&quot;&gt;破解教程&lt;/h2&gt;
+
+&lt;p&gt;破解文件提取地址(4.1.4)：
+&lt;a href=&quot;https://pan.baidu.com/s/1c2mz0YW&quot;&gt;https://pan.baidu.com/s/1eRNYPxg&lt;/a&gt;
+密码：4stp&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://charles.iiilab.com/&quot;&gt;其他版本看这里&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;步骤&quot;&gt;步骤&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;打开 Fidder，找到应用程序中的 Charles，右击显示包内容&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step1.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用上面提取出来的破解文件替换charles.jar文件即可&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step2.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;抓包原理&quot;&gt;抓包原理&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mouxuejie.com/blog/2017-03-19/capture-package-principle/&quot;&gt;某学姐带你了解抓包原理&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;http抓包&quot;&gt;HTTP抓包&lt;/h4&gt;
+
+&lt;p&gt;1、打开Charles；&lt;/p&gt;
+
+&lt;p&gt;2、保证手机和Mac在一个局域网，设置-&amp;gt;无线网络-&amp;gt;“你连接的网络”详情-&amp;gt;代理设置-&amp;gt;手动-&amp;gt;输入Mac的IP地址和端口号8888；&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step4.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step5.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3、当设备访问app接口时，在Charles会弹出确认选，选择Allow；&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step3.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;效果如下:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step6.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;https抓包&quot;&gt;HTTPS抓包&lt;/h4&gt;
+
+&lt;p&gt;1、菜单栏 Help -&amp;gt; SSL Proxying -&amp;gt; Install Charles Root Certificate，找到Charles Proxy CA 证书，双击打开证书信息页面，将 加密套接字协议层(SSL) 设置为始终信任；&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step7.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2、手机浏览器打开 http://charlesproxy.com/getssl 下载证书，最好使用类似UC之类的浏览器app访问，下载完成之后自动配置；&lt;/p&gt;
+
+&lt;p&gt;3、开启SSL代理，Proxy-&amp;gt;SSL Proxying Setting，在Locations里面添加要使用SSL代理的网站，端口号输入443，如果需要匹配所有的HTTPS网站则输入 * 号即可。现在即可拦截Https的数据包。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step9.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/charles/charles_step8.png&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;关于我&quot;&gt;关于我&lt;/h4&gt;
+&lt;p&gt;QQ交流群:496946393&lt;/p&gt;
+
+&lt;p&gt;邮箱: nh_zhe@163.com&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/zhe525069676&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/users/550d52af9d72/latest_articles&quot;&gt;简书&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.zheblog.com&quot;&gt;个人博客&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Aug 2017 01:20:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/08/15/Mac-Charles/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/15/Mac-Charles/</guid>
+        
+        <category>工具</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>实用网站推荐</title>
+        <description>&lt;h2 id=&quot;实用网站推荐&quot;&gt;实用网站推荐&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;1、&lt;a href=&quot;http://abowman.com/&quot;&gt;上班休息遛遛狗，喂喂鱼&lt;/a&gt;&lt;/p&gt;
+
+&lt;object type=&quot;application/x-shockwave-flash&quot; style=&quot;outline:none;&quot; data=&quot;http://cdn.abowman.com/widgets/dog/dog.swf?3?&quot; width=&quot;300&quot; height=&quot;225&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://cdn.abowman.com/widgets/dog/dog.swf?3?&quot; /&gt;&amp;lt;/param&amp;gt;&lt;param name=&quot;AllowScriptAccess&quot; value=&quot;always&quot; /&gt;&amp;lt;/param&amp;gt;&lt;param name=&quot;wmode&quot; value=&quot;opaque&quot; /&gt;&amp;lt;/param&amp;gt;&lt;param name=&quot;bgcolor&quot; value=&quot;FFFFFF&quot; /&gt;&lt;/object&gt;
+&lt;p&gt;–
+(未完待续)&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Jul 2016 17:30:05 +0800</pubDate>
+        <link>http://localhost:4000/2016/07/12/WebSite-Recommend/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/12/WebSite-Recommend/</guid>
+        
+        <category>工具</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Android 根据包名获取SHA1和MD5</title>
+        <description>&lt;h2 id=&quot;android-根据包名获取sha1和md5&quot;&gt;Android 根据包名获取SHA1和MD5&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;	//这个是获取SHA1的方法
+    public static String getCertificateSHA1Fingerprint(Context context,String packageName) {
+        //获取包管理器
+        PackageManager pm = context.getPackageManager();
+        //获取当前要获取SHA1值的包名，也可以用其他的包名，但需要注意，
+        //在用其他包名的前提是，此方法传递的参数Context应该是对应包的上下文。
+        //返回包括在包中的签名信息
+        int flags = PackageManager.GET_SIGNATURES;
+        PackageInfo packageInfo = null;
+        try {
+            //获得包的所有内容信息类
+            packageInfo = pm.getPackageInfo(packageName, flags);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        //签名信息
+        Signature[] signatures = packageInfo.signatures;
+        byte[] cert = signatures[0].toByteArray();
+        //将签名转换为字节数组流
+        InputStream input = new ByteArrayInputStream(cert);
+        //证书工厂类，这个类实现了出厂合格证算法的功能
+        CertificateFactory cf = null;
+        try {
+            cf = CertificateFactory.getInstance(&quot;X509&quot;);
+        } catch (CertificateException e) {
+            e.printStackTrace();
+        }
+        //X509证书，X.509是一种非常通用的证书格式
+        X509Certificate c = null;
+        try {
+            c = (X509Certificate) cf.generateCertificate(input);
+        } catch (CertificateException e) {
+            e.printStackTrace();
+        }
+        String hexString = null;
+        try {
+            //加密算法的类，这里的参数可以使MD4,MD5等加密算法
+            MessageDigest md = MessageDigest.getInstance(&quot;SHA1&quot;);
+            //获得公钥
+            byte[] publicKey = md.digest(c.getEncoded());
+            //字节到十六进制的格式转换
+            hexString = byte2HexFormatted(publicKey);
+        } catch (NoSuchAlgorithmException e1) {
+            e1.printStackTrace();
+        } catch (CertificateEncodingException e) {
+            e.printStackTrace();
+        }
+        return hexString;
+    }
+
+    //这里是将获取到得编码进行16进制转换
+    private static String byte2HexFormatted(byte[] arr) {
+        StringBuilder str = new StringBuilder(arr.length * 2);
+        for (int i = 0; i &amp;lt; arr.length; i++) {
+            String h = Integer.toHexString(arr[i]);
+            int l = h.length();
+            if (l == 1)
+                h = &quot;0&quot; + h;
+            if (l &amp;gt; 2)
+                h = h.substring(l - 2, l);
+            str.append(h.toUpperCase());
+            if (i &amp;lt; (arr.length - 1))
+                str.append(':');
+        }
+        return str.toString();
+    }
+      
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;如果想获取MD5，请把上面代码中的“SHA1”换成MD5。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jun 2016 01:30:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/06/19/Android%E6%A0%B9%E6%8D%AE%E5%8C%85%E5%90%8D%E8%8E%B7%E5%8F%96SHA1%E5%92%8CMD5/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/19/Android%E6%A0%B9%E6%8D%AE%E5%8C%85%E5%90%8D%E8%8E%B7%E5%8F%96SHA1%E5%92%8CMD5/</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>android检查图片是否损坏</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;filePath是文件的绝对路径。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;/**
+ * 检查图片是否损坏
+ *
+ * @param filePath
+ * @return
+ */
+public static boolean checkImgDamage(String filePath) {
+    BitmapFactory.Options options = null;
+    if (options == null) {
+        options = new BitmapFactory.Options();
+    }
+    options.inJustDecodeBounds = true;
+        
+    BitmapFactory.decodeFile(filePath, options);
+    if (options.mCancel || options.outWidth == -1
+                || options.outHeight == -1) {
+        return true;
+    }
+    return false;
+}
+    
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 18 Jun 2016 01:30:06 +0800</pubDate>
+        <link>http://localhost:4000/2016/06/18/Detect-picture-damage/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/18/Detect-picture-damage/</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>背景图片跟随手势滑动的ViewPager</title>
+        <description>&lt;h2 id=&quot;背景图片跟随手势滑动的viewpager&quot;&gt;背景图片跟随手势滑动的ViewPager&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;背景图片跟随手势滑动的ViewPager，可各方向滑动或点击切换页面。&lt;/p&gt;
+
+&lt;p&gt;效果参考 &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.innovagency.ana&quot;&gt;ANA Portuguese Airports&lt;/a&gt;（google play地址）&lt;/p&gt;
+
+&lt;h4 id=&quot;效果图&quot;&gt;效果图&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/gifs/BgMoveViewPager.gif&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;github代码下载&quot;&gt;&lt;a href=&quot;https://github.com/zhe525069676/BgMoveViewPager&quot;&gt;GitHub代码下载&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;组成&quot;&gt;组成&lt;/h4&gt;
+&lt;p&gt;项目由一个Activity和五个fragment组成。&lt;/p&gt;
+
+&lt;h4 id=&quot;主要代码介绍&quot;&gt;主要代码介绍&lt;/h4&gt;
+&lt;p&gt;1、横向背景移动的ViewPager中，重写dispatchDraw方法:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;@Override
+protected void dispatchDraw(Canvas canvas) {
+   if (this.bg != null) {
+        int width = this.bg.getWidth();
+        int height = this.bg.getHeight();
+        int count = getAdapter().getCount();
+        int x = getScrollX();
+        //子View中背景图片需要显示的宽度，放大背景图或缩小背景图。
+        int n = height * getWidth() / getHeight();
+        //(width - n) / (count - 1)表示除去显示第一个ViewPager页面用去的背景宽度，剩余的ViewPager需要显示的背景图片的宽度。
+        //getWidth()等于ViewPager一个页面的宽度，即手机屏幕宽度。在该计算中可以理解为滑动一个ViewPager页面需要滑动的像素值。
+        //((width - n) / (count - 1)) / getWidth()也就表示ViewPager滑动一个像素时，背景图片滑动的宽度。
+        //x * ((width - n) / (count - 1)) / getWidth()也就表示ViewPager滑动x个像素时，背景图片滑动的宽度。
+        //背景图片滑动的宽度的宽度可以理解为背景图片滑动到达的位置。
+         int w = (x+getWidth()) * ((width - n) / (count - 1)) / getWidth();
+         canvas.drawBitmap(this.bg, new Rect(w, 0, n + w, height), new Rect(x, 0, x + getWidth(), getHeight()), this.b);
+    }
+    super.dispatchDraw(canvas);
+}
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;2、IScrollListener中控制是否可以方向滚动&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;void canScrollView(boolean isCanScroll);
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;3、添加FixedSpeedScroller类(继承Scroller)，控制ViewPager调用setCurrentItem方法时的滚动速度。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;private int mDuration = 800; // 默认为800ms
+@Override
+    public void startScroll(int startX, int startY, int dx, int dy, int duration) {
+        super.startScroll(startX, startY, dx, dy, mDuration);
+    }
+
+    @Override
+    public void startScroll(int startX, int startY, int dx, int dy) {
+        super.startScroll(startX, startY, dx, dy, mDuration);
+    }
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;最后&quot;&gt;最后&lt;/h4&gt;
+
+&lt;p&gt;下载代码请移步&lt;a href=&quot;https://github.com/zhe525069676/BgMoveViewPager&quot;&gt;GitHub&lt;/a&gt;，如果对您有帮助请Star，有问题随时联系我，谢谢.&lt;/p&gt;
+
+&lt;h4 id=&quot;关于我&quot;&gt;关于我&lt;/h4&gt;
+&lt;p&gt;QQ交流群:496946393&lt;/p&gt;
+
+&lt;p&gt;邮箱: nh_zhe@163.com&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/users/550d52af9d72/latest_articles&quot;&gt;简书&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.zheblog.com&quot;&gt;个人博客&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Jun 2016 01:30:06 +0800</pubDate>
+        <link>http://localhost:4000/2016/06/18/BgMoveViewPager/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/18/BgMoveViewPager/</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>类似QQ、微信、微博的WeiBoLayout</title>
+        <description>&lt;h2 id=&quot;android-类似qq微信微博的weibolayout&quot;&gt;Android 类似QQ、微信、微博的WeiBoLayout&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;仿微博微信qq包含展示动态feed图片不同数量不同布局的gridview和识别包含超链接字话题人的文本效果&quot;&gt;仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。&lt;/h4&gt;
+
+&lt;h4 id=&quot;weibolayout中的feedgridview是根据显示子view的个数使其填充满屏幕宽度的viewweibolayout可识别文本中的超链接字话题人适用于社交软件feed的展示&quot;&gt;WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。&lt;/h4&gt;
+
+&lt;p&gt;FeedGridView XML:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;lt;com.zheblog.weibogridview.view.FeedGridView
+        android:id=&quot;@+id/gv_photo&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_marginTop=&quot;@dimen/zhe_dp10&quot;
+        android:listSelector=&quot;@color/zhe_transparent&quot;
+        android:scrollbars=&quot;none&quot;
+        android:stretchMode=&quot;none&quot;
+        app:hSpacing=&quot;@dimen/zhe_dp10&quot;
+        app:pSpacing=&quot;@dimen/zhe_dp10&quot;
+        app:vSpacing=&quot;@dimen/zhe_dp10&quot; /&amp;gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;hSpacing是水平间距
+vSpacing是垂直间距
+pSpacing是GridView两边距父控件的间距，便于动态计算每个item的宽度
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;FeedGridView 使用代码：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;gvPhoto.setPhotoAdapter(item.getPhotoModels());
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;识别文本中的超链接、#字话题、@人的文本&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;tvContent.setText(TimeLineUtility.convertNormalStringToSpannableString(item.getContent(), TimeLineUtility.TimeLineStatus.FEED));
+tvContent.setOnTouchListener(new ClickableTextViewMentionLinkOnTouchListener());
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;//LINK单一识别超链接
+//FEED识别超链接、#字话题、@人
+public enum TimeLineStatus {
+        LINK, FEED
+    }
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;动态效果图：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gifs/WeiBoLayout.gif&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;github代码下载&quot;&gt;&lt;a href=&quot;https://github.com/zhe525069676/WeiBoLayout&quot;&gt;GitHub代码下载&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;最后&quot;&gt;最后&lt;/h4&gt;
+
+&lt;p&gt;下载代码请移步&lt;a href=&quot;https://github.com/zhe525069676/WeiBoLayout&quot;&gt;GitHub&lt;/a&gt;，如果对您有帮助请Star，有问题随时联系我，谢谢.&lt;/p&gt;
+
+&lt;h4 id=&quot;关于我&quot;&gt;关于我&lt;/h4&gt;
+&lt;p&gt;QQ交流群:496946393&lt;/p&gt;
+
+&lt;p&gt;邮箱: nh_zhe@163.com&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/users/550d52af9d72/latest_articles&quot;&gt;简书&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.zheblog.com&quot;&gt;个人博客&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jun 2016 20:50:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/06/06/WeiBoLayout/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/06/WeiBoLayout/</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>java 锁的特性</title>
+        <description>&lt;h2 id=&quot;锁的特性&quot;&gt;锁的特性&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;锁提供了两种主要特性：互斥(mutual exclusion)和可见性(visibility)。互斥即一次只允许一个线程持有某个特定的锁，因此可使用该特性实现对共享数据的协调访问协议，这样，一次就只有一个线程能够使用该共享数据。可见性要更加复杂一些，它必须确保释放锁之前对共享数据做出的更改对于随后获得该锁的另一个线程是可见的 —— 如果没有同步机制提供的这种可见性保证，线程看到的共享变量可能是修改前的值或不一致的值，这将引发许多严重问题。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 Apr 2016 22:30:05 +0800</pubDate>
+        <link>http://localhost:4000/2016/04/18/java-lock/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/04/18/java-lock/</guid>
+        
+        <category>Android</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hello 2015</title>
+        <description>&lt;hr /&gt;
+&lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;http://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;quick-start&quot;&gt;Quick Start&lt;/h2&gt;
+
+&lt;h3 id=&quot;create-a-new-post&quot;&gt;Create a new post&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo new &lt;span class=&quot;s2&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/writing.html&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;run-server&quot;&gt;Run server&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo server
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/server.html&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;generate-static-files&quot;&gt;Generate static files&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo generate
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/generating.html&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;deploy-to-remote-sites&quot;&gt;Deploy to remote sites&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;hexo deploy
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/deployment.html&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jan 2015 20:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2015/01/29/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/01/29/hello-world/</guid>
+        
+        <category>Life</category>
+        
+        
+      </item>
     
   </channel>
 </rss>

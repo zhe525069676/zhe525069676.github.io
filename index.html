@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "在最虚荣的年纪却一无所有"
+description: "等一场八月的雨"
 ---
 
 {% for post in paginator.posts %}
@@ -15,7 +15,11 @@ description: "在最虚荣的年纪却一无所有"
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+            {% if post.lang == 'en' %}
+                {{ post.content | strip_html | truncate:300 }}
+            {% else %}
+                {{ post.content | strip_html | truncate:200 }}
+            {% endif %}
         </div>
     </a>
     <p class="post-meta">
