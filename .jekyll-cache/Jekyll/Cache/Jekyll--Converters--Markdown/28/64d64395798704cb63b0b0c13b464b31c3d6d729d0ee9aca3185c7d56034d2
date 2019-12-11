@@ -1,0 +1,83 @@
+I"i<h2 id="android-类似qq微信微博的weibolayout">Android 类似QQ、微信、微博的WeiBoLayout</h2>
+<hr />
+
+<h4 id="仿微博微信qq包含展示动态feed图片不同数量不同布局的gridview和识别包含超链接字话题人的文本效果">仿微博、微信QQ，包含展示动态(Feed)图片，不同数量不同布局的GridView和识别包含超链接、#字话题、@人的文本效果。</h4>
+
+<h4 id="weibolayout中的feedgridview是根据显示子view的个数使其填充满屏幕宽度的viewweibolayout可识别文本中的超链接字话题人适用于社交软件feed的展示">WeiBoLayout中的FeedGridView是根据显示子View的个数，使其填充满屏幕宽度的View，WeiBoLayout可识别文本中的超链接、#字话题、@人，适用于社交软件Feed的展示。</h4>
+
+<p>FeedGridView XML:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre>&lt;com.zheblog.weibogridview.view.FeedGridView
+        android:id="@+id/gv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zhe_dp10"
+        android:listSelector="@color/zhe_transparent"
+        android:scrollbars="none"
+        android:stretchMode="none"
+        app:hSpacing="@dimen/zhe_dp10"
+        app:pSpacing="@dimen/zhe_dp10"
+        app:vSpacing="@dimen/zhe_dp10" /&gt;
+</pre></td></tr></tbody></table></code></pre></div></div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>hSpacing是水平间距
+vSpacing是垂直间距
+pSpacing是GridView两边距父控件的间距，便于动态计算每个item的宽度
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>FeedGridView 使用代码：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>gvPhoto.setPhotoAdapter(item.getPhotoModels());
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>识别文本中的超链接、#字话题、@人的文本</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>tvContent.setText(TimeLineUtility.convertNormalStringToSpannableString(item.getContent(), TimeLineUtility.TimeLineStatus.FEED));
+tvContent.setOnTouchListener(new ClickableTextViewMentionLinkOnTouchListener());
+</pre></td></tr></tbody></table></code></pre></div></div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>//LINK单一识别超链接
+//FEED识别超链接、#字话题、@人
+public enum TimeLineStatus {
+        LINK, FEED
+    }
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>动态效果图：</p>
+
+<p><img src="/assets/gifs/WeiBoLayout.gif" style="width: 50%;" /></p>
+
+<h4 id="github代码下载"><a href="https://github.com/zhe525069676/WeiBoLayout">GitHub代码下载</a></h4>
+
+<h4 id="最后">最后</h4>
+
+<p>下载代码请移步<a href="https://github.com/zhe525069676/WeiBoLayout">GitHub</a>，如果对您有帮助请Star，有问题随时联系我，谢谢.</p>
+
+<h4 id="关于我">关于我</h4>
+<p>QQ交流群:496946393</p>
+
+<p>邮箱: nh_zhe@163.com</p>
+
+<p><a href="http://www.jianshu.com/users/550d52af9d72/latest_articles">简书</a></p>
+
+<p><a href="http://www.zheblog.com">个人博客</a></p>
+:ET

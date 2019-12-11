@@ -1,0 +1,48 @@
+I"`<hr />
+<p>filePath是文件的绝对路径。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre></td><td class="rouge-code"><pre>/**
+ * 检查图片是否损坏
+ *
+ * @param filePath
+ * @return
+ */
+public static boolean checkImgDamage(String filePath) {
+    BitmapFactory.Options options = null;
+    if (options == null) {
+        options = new BitmapFactory.Options();
+    }
+    options.inJustDecodeBounds = true;
+        
+    BitmapFactory.decodeFile(filePath, options);
+    if (options.mCancel || options.outWidth == -1
+                || options.outHeight == -1) {
+        return true;
+    }
+    return false;
+}
+    
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+:ET

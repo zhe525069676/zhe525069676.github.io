@@ -1,0 +1,37 @@
+I"Ï<hr />
+<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+
+<h2 id="quick-start">Quick Start</h2>
+
+<h3 id="create-a-new-post">Create a new post</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>hexo new <span class="s2">"My New Post"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
+
+<h3 id="run-server">Run server</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>hexo server
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
+
+<h3 id="generate-static-files">Generate static files</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>hexo generate
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html">Generating</a></p>
+
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span>hexo deploy
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html">Deployment</a></p>
+:ET
