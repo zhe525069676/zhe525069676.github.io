@@ -17,7 +17,7 @@ tags:
 效果参考 [ANA Portuguese Airports](https://play.google.com/store/apps/details?id=com.innovagency.ana)（google play地址）
 
 #### 效果图 ####
-<img src="img/in-post/gifs/BgMoveViewPager.gif" style="width: 50%;">
+<img src="/img/in-post/gifs/BgMoveViewPager.gif" style="width: 50%;">
 
 #### [GitHub代码下载](https://github.com/zhe525069676/BgMoveViewPager) ####
 
