@@ -59,7 +59,7 @@ public enum TimeLineStatus {
 ```
 动态效果图：
 
-<img src="img/in-post/gifs/WeiBoLayout.gif" style="width: 50%;">
+<img src="/img/in-post/gifs/WeiBoLayout.gif" style="width: 50%;">
 
 
 #### [GitHub代码下载](https://github.com/zhe525069676/WeiBoLayout) ####
