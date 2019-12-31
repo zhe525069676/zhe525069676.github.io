@@ -4,7 +4,7 @@ title:      "android检查图片是否损坏"
 subtitle:   "android检查图片是否损坏"
 date:       2016-06-17 17:30:06
 author:     "哲匠"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-rwd.jpg"
 tags:
     - Android
 ---

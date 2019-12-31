@@ -4,7 +4,7 @@ title:      "背景图片跟随手势滑动的ViewPager"
 subtitle:   "背景图片跟随手势滑动的ViewPager"
 date:       2016-06-17 17:30:06
 author:     "哲匠"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-sample-image.jpg"
 tags:
     - Android
 ---
@@ -17,7 +17,7 @@ tags:
 效果参考 [ANA Portuguese Airports](https://play.google.com/store/apps/details?id=com.innovagency.ana)（google play地址）
 
 #### 效果图 ####
-<img src="/assets/gifs/BgMoveViewPager.gif" style="width: 50%;">
+<img src="img/in-post/gifs/BgMoveViewPager.gif" style="width: 50%;">
 
 #### [GitHub代码下载](https://github.com/zhe525069676/BgMoveViewPager) ####
 

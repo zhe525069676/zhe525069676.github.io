@@ -4,7 +4,7 @@ title:      "Android 根据包名获取SHA1和MD5"
 subtitle:   "Android 根据包名获取SHA1和MD5"
 date:       2016-06-18 17:30:00
 author:     "哲匠"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-universe.jpg"
 tags:
     - Android
 ---

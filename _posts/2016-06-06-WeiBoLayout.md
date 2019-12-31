@@ -4,7 +4,7 @@ title:      "类似QQ、微信、微博的WeiBoLayout"
 subtitle:   "类似QQ、微信、微博的WeiBoLayout"
 date:       2016-06-06 12:50:00
 author:     "哲匠"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-alitrip.jpg"
 tags:
     - Android
 ---
@@ -59,7 +59,7 @@ public enum TimeLineStatus {
 ```
 动态效果图：
 
-<img src="/assets/gifs/WeiBoLayout.gif" style="width: 50%;">
+<img src="img/in-post/gifs/WeiBoLayout.gif" style="width: 50%;">
 
 
 #### [GitHub代码下载](https://github.com/zhe525069676/WeiBoLayout) ####
